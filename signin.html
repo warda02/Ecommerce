@@ -1,0 +1,536 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>papyrus</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!--favicon-->
+  <link rel="icon" type="image/x-icon" href="./image/default.png">
+  <!--font awsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+<style>
+  /*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+  body {
+    font-size: 13px;
+
+    position: sticky;
+    margin-top: 150px;
+    background-size: cover;
+
+  }
+
+  .paragraph {
+    font-size: medium;
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+    margin-left: -85px;
+  }
+
+  .container3 img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    height: 180px;
+    width: 180px;
+  }
+
+  .container1 {
+    margin-top: -150px;
+  }
+
+  /*form container*/
+  .container2 {
+    background-color: white;
+    width: 500px;
+    padding: 25px;
+    margin: 120px auto 0;
+    border-top: 5px solid rgb(179, 89, 201);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    margin-left: 600px;
+    margin-top: -472px;
+  }
+
+  .heading {
+    font-family: Amatic SC sans-serif;
+    color: aliceblue;
+    margin-left: 160px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .input-name {
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+  }
+
+
+  .lock {
+    padding: 8px 11px;
+
+
+  }
+
+  .name {
+    width: 45%;
+    padding: 8px 0 8px 40px;
+  }
+
+  .input-name span {
+    margin-left: 35px;
+  }
+
+  .text-name {
+    width: 100%;
+    padding: 8px 0 8px 40px;
+  }
+
+  .input-name i {
+    position: absolute;
+    font-size: 18px;
+    color: rgb(179, 89, 201);
+  }
+
+  .text-name .name {
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .text-name:hover,
+  .name:hover {
+    background-color: plum;
+  }
+
+  .radio-button {
+    margin-right: 4px;
+  }
+
+  .country {
+    display: inline block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 35px;
+    cursor: pointer;
+    border: 1px solid #666;
+    background-color: white;
+  }
+
+  .button {
+    background-color: rgb(179, 89, 201);
+    height: 35px;
+    line-height: 35px;
+    width: 50%;
+    margin-left: 80px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+</style>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="./project.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="./image/default.png" alt="">
+
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./index.html">Gallery</a></li>
+          <li><a href="./index.html">Our Best</a></li>
+          <li><a href="./index.html">Team</a></li>
+          <li><a href="./index.html">Why Us</a></li>
+         <li><a href="./index.html">Reviews</a></li>
+          <li class="dropdown"><a href="./shop.html"><span>Shop</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="./shop.html">E-CARDS</a></li>
+              <li class="dropdown"><a href="./shop.html"><span>BEST SELLING</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="./shop.html"> BIRTHDAY </a></li>
+                  <li><a href="./shop.html"> BABY SHOWER </a></li>
+                  <li><a href="./shop.html"> HALLOWEEN </a></li>
+                  <li><a href="./shop.html"> THOUGHTS </a></li>
+                  <li><a href="./shop.html"> Mother's day </a></li>
+                </ul>
+              </li>
+              <li><a href="./shop.html">ANNIVERSARY</a></li>
+              <li><a href="./shop.html">THANKS GIVING</a></li>
+              <li><a href="./shop.html">CONGRATULATIONS</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+        <div class="counter">
+          <a href="https://www.freecounterstat.com" title="free web counter"> <img
+              src="https://counter8.optistats.ovh/private/freecounterstat.php?c=uews8py9amqjzd2hz6ferwkfw2uyunee"
+              title="free web counter" alt="free web counter"></a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+ <!--HEADER END-->
+  <section class="container1">
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color:  rgb(179, 89, 201);">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-5 fw-bold  text-light ls-tight"
+              style="font-family:Amatic SC sans-serif;  margin-left:-90px; ">
+              PAPYRUS <br />
+              <span class="text-light" style="font-family:Amatic SC sans-serif;  margin-left:-3px; ">Magic
+                Begins......!</span>
+            </h1>
+            <p style="margin-top:-20px; color:white; font-family:Amatic SC sans-serif; margin-left: -80px;">
+              Signup & be a part of our Beautifull Family.
+              & make your wonderfull day more wonderfull with Our Beautifull cards.....
+            </p>
+           <!-- <h4 class="heading"> TAP HERE </h4>
+            <div class="container3">
+              <img src="./image/slide (5).png" width="150px" height="150px">
+              <img src="./image/slide (10).png" width="150px" height="150px">
+              <img src="./image/slide (2).png" width="150px" height="150px">
+            </div>-->
+            <br>
+            <div class="paragraph">
+              As a Member you won't Pay Shipping charges allover the World.
+              <br>
+              You can Receive Coupon Every Month on your E-mail
+              <br>
+              Customize your invitation and choose 'send online' to create your event.
+              <br><br>
+              At PAPYRUS, we see ourselves taking part in all our user's life milestones: from baby showers to
+              retirement parties, we are always there with the perfect card or invitation We also understand how
+              important personal touch is; that is why we offer our users online design tools that allow them to
+              customize and create beautiful invitations & greeting cards.
+            </div>
+
+            <div class="container2">
+              <h3>Sign Up</h3>
+              <p>Please fill in this form to create an account.</p>
+              <div class="form-container">
+                <form>
+                  <div class=" input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="First Name" class="name">
+
+                    <span>
+                      <i class="fa fa-user lock"></i>
+                      <input type="text" placeholder="Last Name" class="name">
+                    </span>
+                  </div>
+
+                  <div class=" input-name">
+                    <i class="fa fa-envelope email lock"></i>
+                    <input type="email" placeholder="john@gmail" required class="text-name">
+
+                  </div>
+                  <div class=" input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="text" placeholder="Password" required class="text-name">
+
+                  </div>
+                  <div class=" input-name">
+                    <i class="fa fa-lock lock "></i>
+                    <input type="text" placeholder="Confirm Password" required class="text-name">
+                  </div>
+
+                  <div class=" input-name">
+                    <i class="fa fa-phone lock"></i>
+                    <input type="text" placeholder="contact number" required class="text-name">
+                  </div>
+                  <div class="input-name">
+                    <i class="fa fa-calendar-days lock"></i>
+                    <input type="date" placeholder="Date of birth" required class="text-name">
+                  </div>
+
+                  <div class=" input-name">
+                    <i class="fa fa-house lock"></i>
+                    <input type="text" placeholder="Address" required class="text-name">
+                  </div>
+
+                  <div class=" input-name">
+                    <input type="radio" name="Gender" class="radio-button">
+                    <label style="margin-right: 30px ;">MALE</label>
+
+                    <input type="radio" name="Gender" class="radio-button">
+                    <label>FEMALE</label>
+                  </div>
+
+                  <div class="input-name">
+                    <select class="country">
+                      <option>select a country </option>
+                      <option> PAKISTAN</option>
+                      <option> CANADA </option>
+                      <option> OMAN</option>
+                      <option> JAPAN </option>
+                      <option> USA </option>
+                      <option> UK </option>
+
+                    </select>
+
+                  </div>
+
+                  <div class="input-name">
+                    <input type="checkbox" class="check-button">
+                    <label> I accept the terms & condition </label>
+                  </div>
+
+                  <!--submit btn-->
+                  <div class="input-name">
+                    <input type="submit" class="button" onclick="showAlert()" value="Register" class="button">  
+                                
+                    </div>   
+                    <script>
+                      function showAlert() {
+                          alert("Form has been submitted!");
+                      }
+                    </script>  
+                  
+
+
+                  <div class="button2" style="margin-left: 100px ;">
+                    <a href="./loginin.html">Are you already have an account?</a>
+                  </div>
+
+                  <br>
+                  <div class="text-center">
+                    <p>or sign up with:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      </form>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+<!-- ======= Contact Section ======= -->
+
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p>Need Help? <span>Contact Us</span></p>
+    </div>
+
+    <div class="mb-3">
+      <iframe style="border:0; width: 100%; height: 350px;"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- End Google Maps -->
+
+    <!-- start Info Item -->
+    <div class="row gy-4">
+
+      <div class="col-md-6">
+        <div class="info-item  d-flex align-items-center">
+          <i class="icon bi bi-map flex-shrink-0"></i>
+          <div>
+            <h3>Our Address</h3>
+            <p>Clifton Street, KARACHI, K 535022</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="info-item d-flex align-items-center">
+          <i class="icon bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>www.papyrus.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-item  d-flex align-items-center">
+          <i class="icon bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-item  d-flex align-items-center">
+          <i class="icon bi bi-share flex-shrink-0"></i>
+          <div>
+            <h3>Opening Hours</h3>
+            <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+              <strong>Sunday:</strong> Closed
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+<!-- End Contact Section -->
+
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+
+<div class="container">
+  <div class="row gy-3">
+    <div class="col-lg-3 col-md-6 d-flex">
+      <i class="bi bi-geo-alt icon"></i>
+      <div>
+        <h4>Address</h4>
+        <p>
+          CLIFTON Street <br>
+          Karachi, 535022 - PAKISTAN<br>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 footer-links d-flex">
+      <i class="bi bi-telephone icon"></i>
+      <div>
+        <h4>Feel Free To Contact.</h4>
+        <p>
+          <strong>Phone:</strong> 0330-123456<br>
+          <strong>Email:</strong> www.papyrus.com<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 footer-links d-flex">
+      <i class="bi bi-clock icon"></i>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>
+          <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+          Sunday: Closed
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 footer-links">
+      <h4>Follow Us</h4>
+      <div class="social-links d-flex">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="copyright">
+    &copy; Copyright <strong><span>PAPYRUS</span></strong>. All Rights Reserved
+  </div>
+  <div class="credits">
+
+    Designed by <a href="https://bootstrapmade.com/">WARDA & YSHEEKA</a>
+  </div>
+</div>
+
+</footer><!-- End Footer -->
+
+<!-- End Footer -->
+
+<a href="./project.html" class="scroll-top d-flex align-items-center justify-content-center"><i
+  class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+ <!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/index.js"></script>
+<!-- Add Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
